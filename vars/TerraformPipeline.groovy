@@ -4,9 +4,9 @@ def call(Map config = [:]) {
         environment {
             PATH = "/var/lib/jenkins/.local/bin:$PATH"
         }
-        tools {
-            maven "MAVEN3"
-        }
+        // tools {
+        //     maven "MAVEN3"
+        // }
 
         stages {
             stage("Checkout") {
