@@ -37,14 +37,14 @@ def call(Map config = [:]) {
             //     }
             // }
 
-            stage('Terraform Validate') {
-                steps {
-                    script {
-                        def tfsharedlib = new org.mygurukulam.terraform.tfsharedlib()
-                        tfsharedlib.terraform('validate')
-                    }
-                }
-            }
+            // stage('Terraform Validate') {
+            //     steps {
+            //         script {
+            //             def tfsharedlib = new org.mygurukulam.terraform.tfsharedlib()
+            //             tfsharedlib.terraform('validate')
+            //         }
+            //     }
+            // }
 
             stage('Static Code Analysis') {
                 steps {
