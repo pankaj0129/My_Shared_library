@@ -28,14 +28,14 @@ def call(Map config = [:]) {
                 }
             }
 
-            stage('Terraform Init') {
-                steps {
-                    script {
-                        def tfsharedlib = new org.mygurukulam.terraform.tfsharedlib()
-                        tfsharedlib.terraform('init')
-                    }
-                }
-            }
+            // stage('Terraform Init') {
+            //     steps {
+            //         script {
+            //             def tfsharedlib = new org.mygurukulam.terraform.tfsharedlib()
+            //             tfsharedlib.terraform('init')
+            //         }
+            //     }
+            // }
 
             stage('Terraform Validate') {
                 steps {
